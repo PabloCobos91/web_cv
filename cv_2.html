@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Cobos Rodríguez - Curriculum Vitae</title>
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-image: url('https://cdn.pixabay.com/photo/2019/04/06/06/44/astronaut-4106766_1280.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #333;
+        }
+
+        .title-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .title-section h1 {
+            color: #00ffbf;
+            font-size: 48px;
+            margin-bottom: 5px;
+        }
+
+        .title-section strong  {
+            display: block;
+            font-size: 48px;
+            color:#f5f5f5;
+        }
+
+        .title-section p {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff; /* Cambia el color del texto para que sea legible en el fondo */
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .section-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .section {
+            width: 30%;
+            margin: 10px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+        }
+
+        .section h2 {
+            color: #555;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            max-height: 0;
+        }
+
+        .visible {
+            max-height: 2000px; /* Ajusta este valor según sea necesario */
+        }
+
+        .section ul {
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            margin-bottom: 5px;
+        }
+        .experience h3 {
+            color: #007BFF;
+            cursor: pointer;
+            border-bottom: 1px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .experience ul {
+            display: none;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .experience li {
+            margin-bottom: 5px;
+        }
+
+        .experience li:first-child {
+            font-weight: bold;
+        }
+        .hidden {
+        display: none;
+        }
+
+        .visible {
+        display: block;
+        }
+    </style>
+    <script>
+        function toggleExperience(contentId) {
+            var experienceContent = document.getElementById(contentId);
+            if (experienceContent.classList.contains('hidden')) {
+                experienceContent.classList.remove('hidden');
+                experienceContent.classList.add('visible');
+            } else {
+                experienceContent.classList.remove('visible');
+                experienceContent.classList.add('hidden');
+            }
+        }
+    </script>
+</head>
+<body>
+
+
+    <div class="title-section">
+        <h1><strong>PABLO  COBOS  RODRÍGUEZ</strong></h1>
+        <h1><strong>DATA     SCIENTIST</strong></h1>
+        <p>Málaga | Teléfono: 611 60 63 42 | Email: p.pablocobos91@gmail.com</p>
+    
+        <!-- Agrega la siguiente línea para el icono de LinkedIn -->
+        <a href="https://www.linkedin.com/in/pablo-cobos-rodríguez" target="_blank"><img src="fab fa-linkedin" alt="LinkedIn"></a>
+    </div>
+
+    <div class="section" onclick="toggleExperience('resumen')">
+        <h2>RESUMEN PROFESIONAL</h2>
+        <div class="section-content" id="resumen">
+            <p>Bienvenido a mi espacio digital. Soy Pablo Cobos, un ingeniero con una sólida base técnica y una apasionada visión de cómo la tecnología puede impulsar el progreso y mejorar la calidad de vida. A lo largo de mi carrera, he cultivado disciplina, responsabilidad y una actitud educada que me permite abordar nuevos desafíos con iniciativa y positivismo.
+
+                Mi experiencia laboral ha forjado mi capacidad para ser resolutivo y constante, siempre buscando aprender y superarme. Mi entusiasmo por el crecimiento profesional se refleja en mi disposición para viajar, conocer nuevas personas y sumergirme en diversas culturas, incluso considerando la posibilidad de residir fuera de mi ciudad en busca de oportunidades enriquecedoras.
+                
+                Lo que me distingue va más allá de mi formación en ingeniería. Mi profunda conexión con el avance social se entrelaza con mi fascinación por la inteligencia artificial. Creo en su potencial para transformar positivamente la sociedad, siendo una fuerza que, en manos comprometidas, impulsa el progreso y mejora la vida cotidiana.
+                
+                Además de mi dedicación profesional, encuentro equilibrio y inspiración en otros aspectos de la vida. La música es mi refugio creativo, mientras que el deporte mantiene mi cuerpo y mente saludables. Valorando la importancia de la vida social, disfruto conectando con otros, compartiendo experiencias y construyendo relaciones significativas.
+                
+                Como ingeniero especializado en Mecánica y con habilidades destacadas en Python y C++, he aplicado mi experiencia en el desarrollo de aplicaciones utilizando diversos frameworks. Mi enfoque va más allá de la resolución de problemas técnicos; busco crear soluciones innovadoras que impacten positivamente en el entorno y la sociedad.
+                
+                Mi página web no es solo un currículum; es un reflejo auténtico de quien soy. Aquí comparto mi viaje profesional, mi compromiso con el avance tecnológico y mi pasión por la vida en todas sus facetas. Únete a mí en este viaje donde la tecnología y la humanidad se entrelazan para crear un futuro más brillante y conectado.
+                
+                Gracias por visitar mi espacio digital. ¡Te invito a explorar y ser parte de esta travesía!</p>
+        </div>
+    </div>
+
+    <div class="section" onclick="toggleExperience('datanalyst-content')">
+        <h2>EXPERIENCIA PROFESIONAL</h2>
+        <div class="section-content" id="datanalyst-content">
+            <div class="experience">
+                <h3>Data Analyst, MyTreeRisk</h3>
+                <ul>
+                    <li>Contribución al desarrollo y mantenimiento de MyTreeRisk, una aplicación líder en el inventario y gestión de arbolado urbano.</li>
+                    <li>Análisis de datos para identificar patrones y tendencias en la salud y crecimiento del arbolado urbano.</li>
+                    <li>Implementación de mejoras basadas en análisis de datos para optimizar la eficiencia en la gestión de zonas verdes y palmeras urbanas.</li>
+                    <li>Colaboración estrecha con equipos multidisciplinarios para garantizar la calidad de los datos y la precisión de las funcionalidades de la aplicación.</li>
+                    <li>Generación de informes y visualizaciones que respaldan la toma de decisiones estratégicas en el ámbito del arbolado urbano.</li>
+                </ul>
+                <h3>Ingeniero, REMANAER S.L</h3>
+                <ul>
+                    <li>Mantenimiento preventivo y correctivo en palas de aerogeneradores.</li>
+                    <li>Inspección, auditorías técnicas y pruebas termográficas.</li>
+                    <li>Especialización en trabajos verticales y reparación de componentes de fibra.</li>
+                </ul>
+    
+                <h3>Ingeniero, NOVASOL S.L</h3>
+                <ul>
+                    <li>Elaboración de presupuestos para instalaciones fotovoltaicas y térmicas.</li>
+                    <li>Legalización de instalaciones fotovoltaicas de baja tensión.</li>
+                    <li>Inspección de mantenimientos preventivos y correctivos.</li>
+                    <li>Elaboración de proyectos fotovoltaicos hasta 100Kw.</li>
+                </ul>
+    
+                <h3>CEO-Ingeniero Mecánico, Tech Hype</h3>
+                <ul>
+                    <li>Desarrollo y ejecución de estrategias.</li>
+                    <li>Asesoramiento estratégico y dirección del equipo en el área de potencia y admisión.</li>
+                </ul>
+    
+                <h3>Autónomo</h3>
+                <ul>
+                    <li>Proyectos de vehículos reformados, instalaciones de fontanería y ACS, y proyectos fotovoltaicos.</li>
+                    <li>Profesor de Ingeniería en academia privada.</li>
+                </ul>
+    
+            </div>
+            <!-- Puedes agregar más experiencias laborales aquí -->
+        </div>
+    </div>
+    <div class="section" onclick="toggleExperience('habilidades')">
+        <h2>HABILIDADES TÉCNICAS RELEVANTES</h2>
+        <div class="section-content" id="habilidades">
+            <ul>
+                <li>Ingeniero Técnico con especialidad en Mecánica y formación en Python y C++.</li>
+                <li>Programación orientada a objetos </li>
+                <li>Experiencia en el desarrollo de aplicaciones utilizando frameworks como Django, Flask, FastApi, Dash y Streamlit.</li>
+                <li>Familiarizado con CSS y HTML.</li>
+                <li>Amplio conocimiento en bibliotecas como Tkinter, Streamlit PyQT, Flask, PyWebIO, Pandas, Numpy y Jupyter.</li>
+                <li>Especializado en el manejo de bases de datos SQL, PostgreSQL y MongoDB.</li>
+                <li>Familiarizado con entornos Windows y Linux, y habilidades en Docker.</li>
+                <li>Habilidades en el campo de Machine Learning, con experiencia en librerías como scikit-learn, TensorFlow, y Spark.</li>
+                <li>Experiencia en herramientas de AutoML como PyCaret.</li>
+                <li>Conocimientos básicos de Hacking Ético. </li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" onclick="toggleExperience('idiomas')">
+    <h2>IDIOMAS Y DIPLOMAS</h2>
+    <div class="section-content" id="idiomas">
+        <ul>
+            <li><span class="flag ">🇬🇧</span> Inglés, nivel B2.</li>
+            <li><span class="flag ">🇫🇷</span> Francés, nivel A2.</li>
+            <li><span class="flag ">🇪🇸</span> Español, nativo.</li>
+        </ul>
+    </div>
+
+    <!-- ... (más secciones aquí) ... -->
+
+</body>
+</html>
